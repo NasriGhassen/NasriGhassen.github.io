@@ -13,15 +13,50 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="assets/css/jquery.scrollbar.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Ghassan Nasri - CV - Web Designer</title>
     
-    <title>Photollax - 3D Parallax Photography Template</title>
+<style>
+    /* ---- reset ---- */
 
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+.particles-js {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+    </style>
 </head>
 
 <body>
+<script>
+//    function isScrolledIntoView(el) {
+//    var elemTop = el.getBoundingClientRect().top;
+//    var elemBottom = el.getBoundingClientRect().bottom;
+//    console.log("stupid");
+//    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+//    return isVisible;
+//}
+//    
+//    function moveto(id){
+//        var element = document.querySelector(".particles-js");
+//        element.parentNode.removeChild(element);
+//        var newDiv = document.getElementById(id);
+//        newDiv.insertBefore(element, newDiv.childNodes[0]);
+//    }
+      </script>
+
 <audio id="player" src="assets/mp3/Heart.mp3"></audio>
 <div class="page-wrapper">
-
     <div class="loading-overlay"></div>
 
     <div class="off-screen-navigation">
@@ -45,9 +80,9 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="new-window" data-toggle="modal" data-target="#modal-blog">
+                <a href="tiltviewer/gallery.xml" class="new-window" data-toggle="modal" data-target="#modal-blog">
                     <i class="fa fa-pencil"></i>
-                    <span>Blog</span>
+                    <span>Portfolio</span>
                 </a>
             </li>
             <li>
@@ -66,20 +101,39 @@
             <i></i>
             <i></i>
         </a>
+             <div class="slider-controls" >
+             <div style="position:relative;
+;float:right;margin-top:20px;">
+            
+             <a href="#" id="togglem" class="volume-off">
+            
+            <i class ="fa fa-volume-off"></i>
+            
+            </a>
+
+                 </div>                              
+</div><p style="position:relative;
+;float:right;margin-top:55px;margin-right:30px;">Music On/Off</p>
         <!--end nav-btn-->
+<!--
         <div class="brand">
             <a href="index.html" onclick="document.getElementById('player').play()" >
                 <img src="assets/img/logo.png" alt="">
                 
             </a>
+            
         </div>
+-->
+     
         <!--end brand-->
     </nav>
     <!--end navigation-->
 
     <div class="slider-navigation">
        
-        <div class="slider-pager owl-carousel"></div>
+        <div class="slider-pager owl-carousel">
+        
+                        </div>
         
         <div class="slider-controls">
 
@@ -91,12 +145,11 @@
                 <i class="fa fa-chevron-right"></i>
             </a>
           
-             <a href="#" class="zoom-out">
+             <a href="#" onclick="document.getElementById('player').play()" class="zoom-out">
                 <i class="fa fa-search-minus"></i>
             </a>
     
-            <a href="#" id="togglem">
-            </a>
+           
             
             
             
@@ -105,7 +158,7 @@
     <!--end slider-navigation-->
 <div>
 
-   <audio id="bgplayer" src="./assets/mp3/theWay.mp3" autoplay loop>
+   <audio id="bgplayer" src="./assets/mp3/ambient.mp3" autoplay loop>
 <p>If you are reading this, it is because your browser does not support the audio element.</p>
 </audio>
    </div>
@@ -116,107 +169,113 @@
                     <div class="main-title-wrapper">
                        
 
-                        <h1>Hi there! I’m Ghassan NASRI</h1>
+                        <h1>I'm Ghassan NASRI</h1>
+                        <h2>and this is my story.
+                        </h2>
                         <span class="element"><h2><script src="jquery.js"></script>
 <script src="typed.js"></script>
-<script>
-    $(function(){
-        $(".element").typed({
-            strings: ["A Web Designer", "A Frontend Developper"],
-            typeSpeed: 1
-        });
-    });
-</script>
 
 </h2></span>
 
-                        <a href="#" onclick="document.getElementById('player').play()" class="btn btn-default next" >Explore My Skills</a>
+                        <a href="#" onclick="document.getElementById('player').play()" class="btn btn-default next" >Explore</a>
+           
                     </div>
                 </div>
-                <div class="image" data-background="assets/img/0.jpg"></div>
+                <div class="image" data-background="assets/img/0.jpg" alt="Developpeur Frontend Esprit Tunisia"></div>
                 <!--end image-->
             </div>
             <!--end slide-->
 
             <div class="slide" id="1">
+                   <div class="particles-js" ></div>
+
                 <div class="description">
-                    <h2 class="animate">Web Design</h2>
+                    <h2 class="animate">What is Web Design for me?</h2>
                     <dl class="animate">
-                        <dt>Client:</dt>
-                        <dd>John Doe</dd>
-                        <dt>Photographer:</dt>
-                        <dd>Juliana Brown</dd>
-                        <dt>Category:</dt>
-                        <dd>Landscape, Surreal</dd>
-                        <dt>Website:</dt>
-                        <dd><a href="http://www.johndoe.com" >www.johndoe.com</a>
+                        <dd>
+                        My story started since I was 11. I used to make PowerPoint and call
+                        <br>
+                        them Websites. That was before I embark on my current journey 
+                        <br>
+                        to learn the techologies behind acheiving a good looking and an
+                        <br>
+                        effective Website.
+                        <br>
+                        I tried to learn the basics HTML, CSS and PHP by myself and then  
+                        <br>
+                        support it with what I learned in school and university. 
+                        <br>
+                        I've always had the vision of combining art and technology, so this, 
+                        <br>
+                        for me is an opportunity to fulfill that.
                         </dd>
                     </dl>
                     <div class="additional-info animate">
                         <dl>
-                            <dt>ISO:</dt>
-                            <dd>200</dd>
-                            <dt>Shutter Speed:</dt>
-                            <dd>1/10s</dd>
-                            <dt>Focal Length:</dt>
-                            <dd>42mm</dd>
+                            <dd>Feel free to explore my humble Skills and Knowledge<br>
+                             in this domain.                         
+</dd>
                         </dl>
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/1.jpg"></div>
+                <div class="image" data-background="assets/img/1.jpg" alt="Web Designer Graphic Design Multi Lingual"></div>
                 <!--end image-->
             </div>
             <!--end slide-->
 
-            <div class="slide" id="2">
+            <div class="slide" id="2" >
+
                 <div class="description">
-                    <h2 class="animate">Photoshop</h2>
+                    <h2 class="animate">A push in the right direction.</h2>
                     <dl class="animate">
-                        <dt>Client:</dt>
-                        <dd>Personal Work</dd>
-                        <dt>Photographer:</dt>
-                        <dd>Jane Sane</dd>
-                        <dt>Category:</dt>
-                        <dd>Portrait, Real Life</dd>
+                        <dd>
+                        I've always been a good painter, at first it was a struggle <br>
+                        since people around me didn't understand my ambitions and <br>
+                        they kept dragging me down.<br>
+                        With the support of my parents I got into an Art high school<br>
+                        I felt like something bloomed in my mind and I had to work<br>
+                        in order to make it happen.<br>    
+                        </dd>
                     </dl>
                     <div class="additional-info animate">
-                        <dl>
-                            <dt>ISO:</dt>
-                            <dd>300</dd>
-                            <dt>Shutter Speed:</dt>
-                            <dd>1/60s</dd>
-                            <dt>Focal Length:</dt>
-                            <dd>120mm</dd>
+                       <dl>
+                        <dd>
+                        My last year in High School I, along a few of my class mates,<br>
+                        got invited to the "Students' Spring Festival" in Nice - France.<br>
+                        We competed with the Mediterranean coutries there and we nailed <br>
+                        the first prize in the Art and Painting Competition. the experience <br>
+                        was as enriching as it sounds like.
+                        </dd>
                         </dl>
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/2.jpg"></div>
+                <div class="image" data-background="assets/img/2.jpg" alt="Punctual Professional Freelance"></div>
                 <!--end image-->
             </div>
             <!--end slide-->
 
             <div class="slide" id="3">
+
                 <div class="description">
-                    <h2 class="animate">Illustrator</h2>
+                    <h2 class="animate">From Physical to Digital</h2>
                     <dl class="animate">
-                        <dt>Client:</dt>
-                        <dd>Personal Work</dd>
-                        <dt>Photographer:</dt>
-                        <dd>Jane Sane</dd>
-                        <dt>Category:</dt>
-                        <dd>Portrait, Real Life</dd>
+                        <dd>
+                        The more I learned about Design the more I wanted to switch <br>
+                        to digital art. I got myself a graphic tablet and started practicing<br>
+                        The more I worked with it the more I became comfortable using it<br>
+                        Digital Art made me feel like it was what I intended to do.<br>
+                        I started working with the Adobe Collection and it only <br>
+                        made me more and more ambitious.
+                        </dd>
                     </dl>
                     <div class="additional-info animate">
-                        <dl>
-                            <dt>ISO:</dt>
-                            <dd>800</dd>
-                            <dt>Shutter Speed:</dt>
-                            <dd>1/60s</dd>
-                            <dt>Focal Length:</dt>
-                            <dd>42mm</dd>
-                        </dl>
+                        
+                        <dl><dd>
+                        I Design my own content I use in the Websites, from Logos<br>
+                        and Buttons to Illustrations and Artwork.
+                        </dd></dl>
                     </div>
                 </div>
                 <!--end description-->
@@ -226,6 +285,7 @@
             <!--end slide-->
 
             <div class="slide" id="4">
+
                 <div class="description">
                     <h2 class="animate">The Fence</h2>
                     <dl class="animate">
@@ -248,12 +308,13 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/4.jpg"></div>
+                <div class="image" data-background="assets/img/4.jpg" alt="Artist HTML5 CSS Engineer"></div>
                 <!--end image-->
             </div>
             <!--end slide-->
 
             <div class="slide" id="5">
+
                 <div class="description">
                     <h2 class="animate">From Above</h2>
                     <dl class="animate">
@@ -276,11 +337,12 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/5.jpg"></div>
+                <div class="image" data-background="assets/img/5.jpg" alt="Web Development Javascript AngularJS"></div>
             </div>
             <!--end slide-->
 
             <div class="slide" id="6">
+
                 <div class="description">
                     <h2 class="animate">The Butcher</h2>
                     <dl class="animate">
@@ -303,11 +365,12 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/6.jpg"></div>
+                <div class="image" data-background="assets/img/6.jpg" alt="Innovation Serious Teamwork Caring"></div>
             </div>
             <!--end slide-->
 
             <div class="slide" id="7">
+
                 <div class="description">
                     <h2 class="animate">Suzane & John</h2>
                     <dl class="animate">
@@ -330,11 +393,12 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/7.jpg"></div>
+                <div class="image" data-background="assets/img/7.jpg" alt="Passionate Technology Modern Dynamic Responsive"></div>
             </div>
             <!--end slide-->
 
             <div class="slide" id="8">
+
                 <div class="description">
                     <h2 class="animate">Dark Dream</h2>
                     <dl class="animate">
@@ -357,7 +421,7 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/8.jpg"></div>
+                <div class="image" data-background="assets/img/8.jpg" alt="Designer Painter Art Graphic"></div>
             </div>
             <!--end slide-->
 
@@ -384,7 +448,7 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/9.jpg"></div>
+                <div class="image" data-background="assets/img/9.jpg" alt="Service Backend Full Stack"></div>
             </div>
             <!--end slide-->
 
@@ -411,7 +475,7 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/10.jpg"></div>
+                <div class="image" data-background="assets/img/10.jpg" alt="Redesign Adobe Photoshop Illustrator"></div>
             </div>
             <!--end slide-->
 
@@ -438,7 +502,7 @@
                     </div>
                 </div>
                 <!--end description-->
-                <div class="image" data-background="assets/img/11.jpg"></div>
+                <div class="image" data-background="assets/img/11.jpg" alt="Illustration Infographic Business Work Travel"></div>
             </div>
             <!--end slide-->
 
@@ -477,7 +541,7 @@
         <div class="scrollbar-inner">
             <section id="about-me">
                 <div class="image-header">
-                    <div class="bg-transfer"><img src="assets/img/image-header.jpg" alt=""></div>
+                    <div class="bg-transfer"><img src="assets/img/image-header.jpg" alt="Geek Tunisian International"></div>
                 </div>
                 <div class="section-wrapper">
                     <h2>About Me</h2>
@@ -492,11 +556,12 @@
                     </p>
 
                     <p>
-                        Enean sit amet metus sodales, elementum ligula quis, facilisis neque. Sed eu purus ut mauris
-                        malesuada viverra eu vitae eros. In odio neque, fermentum id tincidunt vitae, accumsan eu augue.
-                        Proin vitae porta nulla.
+                       I am really fond of learning languages and currently speak 3 fluently, Arabic, English
+                       and French and learning Norwegian. I am also fond of psychological studies which helps 
+                       the individual to be aware of his environment and gives him the tools to interact with 
+                       it properly.
                     </p>
-                    <img src="assets/img/signature-black.png" alt="">
+                    <img src="assets/img/signature-black.png" alt="Signature">
                 </div>
                 <!--end section-wrapper-->
             </section>
@@ -504,49 +569,50 @@
 
             <section id="services">
                 <div class="section-wrapper">
-                    <h2>Services</h2>
+                    <h2>Studies</h2>
 
                     <p>
-                        Duis ut finibus elit. Praesent vestibulum porta odio, in commodo velit placerat sed. Vivamus et
-                        iaculis sem. Sed nibh turpis, finibus ut est nec, tempus fringilla augue. Quisque blandit nunc eu
-                        tincidunt iaculis.
+                        This is a preview on my studies cursus.
                     </p>
 
                     <div class="service">
                         <div class="image">
-                            <div class="bg-transfer"><img src="assets/img/service-01.jpg" alt=""></div>
+                            <div class="bg-transfer"><img src="assets/img/service-01.jpg" alt="Art School"></div>
                         </div>
                         <div class="description">
-                            <h3>Professional Photography</h3>
+                            <h3>(2008 - 2012) El Omrane High School Of Art</h3>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis lacinia tellus.
-                                Nullam venenatis a sem non dictum.
+                            <p>Bachelor in Computer Sciences
+                            </p>
+                            <p>
+                            Plastic Arts and its History
                             </p>
                         </div>
                     </div>
                     <!--end service-->
                     <div class="service">
                         <div class="image">
-                            <div class="bg-transfer"><img src="assets/img/service-02.jpg" alt=""></div>
+                            <div class="bg-transfer"><img src="assets/img/service-02.jpg" alt="Degree"></div>
                         </div>
                         <div class="description">
-                            <h3>Wedding Photography</h3>
-
-                            <p>Donec mauris nibh, blandit id eros lacinia, lobortis aliquam mauris. Suspendisse laoreet,
-                                tortor ut convallis facilisis
+                            <h3>(2012 - 2015) F.S.T Tunisia</h3>
+                            Computer Sciences Licence Degree
+                            <p>
                             </p>
                         </div>
                     </div>
                     <!--end service-->
                     <div class="service">
                         <div class="image">
-                            <div class="bg-transfer"><img src="assets/img/service-03.jpg" alt=""></div>
+                            <div class="bg-transfer"><img src="assets/img/service-03.jpg" alt="Engineer"></div>
                         </div>
                         <div class="description">
-                            <h3>Video Editing</h3>
+                            <h3>(2015 - 2018) E.S.P.R.I.T</h3>
 
-                            <p>Nullam ultricies purus sed accumsan tempus. Integer lorem dui, pellentesque at arcu non
-                                volutpat fermentum sem.
+                            <p>Computer Sciences Engineering Degree
+                            </p>
+                            <p>
+                            Specialized in Web Development
                             </p>
                         </div>
                     </div>
@@ -558,60 +624,42 @@
 
             <section id="pricing">
                 <div class="section-wrapper">
-                    <h2>Pricing</h2>
+                    <h2>Work Experience</h2>
 
                     <div class="price-package">
-                        <div class="price">$129</div>
+                        <div class="price">(2009 - 2013)</div>
                         <div class="description">
-                            <h3>Basic Package</h3>
+                            <h3>J.E.T (Japanese Events in Tunisia)</h3>
 
                             <p>
-                                Enean sit amet metus sodales, elementum ligula quis, facilisis neque. Sed eu purus ut mauris
-                                malesuada viverra eu vitae eros.
+                                J.E.T was my first work experience, I was a graphic assistant and I helped
+                                acheiving the events' posters and tickets designs.
+                                I also helped with making the digital content in the events' websites.
                             </p>
                             <ul>
-                                <li>Aenean pretium ex non leo aliquam</li>
-                                <li>Sit amet porta urna interdum</li>
                             </ul>
                         </div>
                     </div>
                     <!--end price-package-->
 
                     <div class="price-package">
-                        <div class="price">$149</div>
+                        <div class="price">(2016 - Current)</div>
                         <div class="description">
-                            <h3>Advanced Package</h3>
+                            <h3>Geemick Entertainment</h3>
 
                             <p>
-                                Cras ornare ligula quis ultrices fermentum. Maecenas finibus, sapien non suscipit luctus
+                            I joined Geemick as a lead designer, I worked with them on Comic Con Tunisia
+                            in partnership with Attractive City.
+                            I worked on the Communication Media we had to provide before the event and 
+                            the actual decoration of the event location.
+                            I also made experiments with the tickets designs and the poster composition.
                             </p>
                             <ul>
-                                <li>Aenean pretium ex non leo aliquam</li>
-                                <li>Sit amet porta urna interdum</li>
-                                <li>In pretium euismod justo et porttitor</li>
                             </ul>
                         </div>
                     </div>
                     <!--end price-package-->
 
-                    <div class="price-package">
-                        <div class="price">$169</div>
-                        <div class="description">
-                            <h3>Professional Package</h3>
-
-                            <p>
-                                Phasellus in dolor sit amet lorem scelerisque sodales quis ut eros. Nullam elit dui, egestas
-                                vel tortor
-                            </p>
-                            <ul>
-                                <li>Aenean pretium ex non leo aliquam</li>
-                                <li>Sit amet porta urna interdum</li>
-                                <li>In pretium euismod justo et porttitor</li>
-                                <li>Sed eu purus ut mauris</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--end price-package-->
                 </div>
                 <!--end section-wrapper-->
             </section>
@@ -626,11 +674,13 @@
                         <div class="col-md-6 col-sm-6">
                             <h3>Address</h3>
                             <address>
-                                4758 Nancy Street
+                                50 Essoumoud Avenue 
+                                                                <br>
+                                Ettahrir City 2042
                                 <br>
-                                +1 919-571-2528
+                                +216 52 626 715
                                 <br>
-                                <a href="#">hello@example.com</a>
+                                <a href="#">nasrighassen@gmail.com</a>
                             </address>
                         </div>
                         <!--end col-sm-6-->
@@ -638,8 +688,8 @@
                             <h3>Social</h3>
 
                             <div class="social">
-                                <figure><a href="" class="icon"><i class="fa fa-facebook"></i>Facebook</a></figure>
-                                <figure><a href="" class="icon"><i class="fa fa-twitter"></i>Twitter</a></figure>
+                                <figure><a href="https://www.facebook.com/Hardhsten.Sigurdr" target="_blank" class="icon"><i class="fa fa-facebook"></i>Facebook</a></figure>
+                                <figure><a href="https://www.linkedin.com/in/ghassan-nasri-7202878b/" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i>Linkedin</a></figure>
                                 <figure><a href="" class="icon"><i class="fa fa-youtube"></i>Youtube</a></figure>
                                 <figure><a href="" class="icon"><i class="fa fa-pinterest"></i>Pinterest</a></figure>
                             </div>
@@ -707,7 +757,18 @@
     </div>
 </div>
 <!--end modal-->
-
+<script> 
+    var element = document.querySelector(".particles-js");
+    var e1 = element.cloneNode();
+    e1.innerHTML = element.innerHTML;
+        var newDiv = document.getElementById(3);
+        newDiv.insertBefore(e1, newDiv.childNodes[0]);
+    var e2 = document.createElement('div');
+    e2.innerHTML = element.innerHTML;
+        newDiv = document.getElementById(4);
+        newDiv.insertBefore(e2, newDiv.childNodes[0]);
+    
+ </script>
 <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -717,18 +778,133 @@
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/pace.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
+<script src="assets/js/particle.js"></script>
+<script>
+    particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    </script>
+    
 
 <script type="text/javascript">
 
     $(document).ready(function ($) {
         "use strict";
         $("#togglem").click( function (){
-
     $("#bgplayer").prop('muted', !$("#bgplayer").prop('muted'));
 });
 
 
     });
+    
+   
 
     var latitude = 34.038405;
     var longitude = -117.946944;
@@ -738,5 +914,10 @@
     google.maps.event.addDomListener(window, "load", simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
 
 </script>
+ <script>
+    $(document).ready(function() {
+      $('#bgplayer').prop('volume', 0.5);
+    })
+ </script>
 
 </body>

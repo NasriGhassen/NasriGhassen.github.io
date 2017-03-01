@@ -538,9 +538,9 @@ img {
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  background: -moz-linear-gradient(top, transparent 0%, rgba(16, 27, 34, 0.9) 100%);
-  background: -webkit-linear-gradient(top, transparent 0%, rgba(16, 27, 34, 0.9) 100%);
-  background: linear-gradient(to bottom, transparent 0%, rgba(16, 27, 34, 0.9) 100%);
+  background: -moz-linear-gradient(top, transparent 0%, rgba(94, 6, 6, 0.1) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(94, 6, 6, 0.1) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(94, 6, 6, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -556,6 +556,7 @@ img {
 .slide .description h2 {
   margin-bottom: 40px;
     font-size: 55px;
+    
 }
 .slide .description dl {
   font-size: 25px;
@@ -569,9 +570,11 @@ img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   margin-bottom: 2px;
+       text-align: justify; 
 }
 .slide .description .additional-info dl dd {
   margin-bottom: 2px;
+    text-align: justify; 
 }
 .slide .description hr {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
@@ -859,26 +862,14 @@ img {
   margin-bottom: 0;
 }
 .price-package .price {
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
   position: absolute;
   top: 20px;
-  left: 40px;
+  left: 10px;
   line-height: 58px;
 }
-.price-package .price:before {
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  content: "";
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  z-index: -1;
-}
+
 .price-package .description {
   margin-left: 120px;
 }
@@ -1514,6 +1505,9 @@ body::before {
   .slider-controls .zoom-out {
     display: none;
   }
+      .slider-controls .volume-off {
+    display: none;
+  }
 
   .slider-pager {
     width: calc(100% - 150px);
@@ -1769,3 +1763,5 @@ body::before {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+
