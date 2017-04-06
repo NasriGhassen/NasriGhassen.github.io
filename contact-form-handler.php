@@ -1,23 +1,33 @@
-<?php 
-$myemail = 'nasrighassen@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['message']))
+<?php
 
+$EmailFrom = Trim(stripslashes($_POST['email']));
+$EmailTo = "nasrighassen@gmail.com";
+$Subject = "Nice & Simple Contact Form by CSS-Tricks";
+$Name = Trim(stripslashes($_POST['name'])); 
+$Email = Trim(stripslashes($_POST['email'])); 
+$Message = Trim(stripslashes($_POST['message'])); 
 
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['message']; 
+// validation
+$validationOK=true;
+if (!$validationOK) {
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  exit;
+}
 
+// prepare email body text
+$Body = "";
+$Body .= "name: ";
+$Body .= $name;
+$Body .= "\n";
+$Body .= "email: ";
+$Body .= $email;
+$Body .= "\n";
+$Body .= "message: ";
+$Body .= $message;
+$Body .= "\n";
 
-	$to = $myemail; 
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
-	
-	mail($to,$email_subject,$email_body,$headers);
+// send email 
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+
 
 ?>
